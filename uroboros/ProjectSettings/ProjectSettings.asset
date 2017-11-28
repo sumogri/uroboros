@@ -602,7 +602,7 @@ PlayerSettings:
   cloudServicesEnabled:
     UNet: 1
   facebookSdkVersion: 7.9.4
-  apiCompatibilityLevel: 2
+  apiCompatibilityLevel: 3
   cloudProjectId: 449c976e-f8f7-4ab9-8007-b88d9d0718db
   projectName: New Unity Project (2)
   organizationId: kazushi-sakashita
