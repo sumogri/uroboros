@@ -3,5 +3,5 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public interface IReset{
-    void Reset();
+    void DoReset();
 }

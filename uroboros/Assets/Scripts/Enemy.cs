@@ -4,13 +4,13 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.EventSystems;
 
-public class Enemy : MonoBehaviour,IDropHandler,IHPBehaviour{
+public class Enemy : MonoBehaviour,IDropHandler,IHPBehaviour,IReset{
     [SerializeField] private float maxHp;
-    
-    public float HP { get; set; }
+    private float hp;
+    public float HP => hp;
 
     void Awake () {
-        HP = maxHp;
+        hp = maxHp;
 	}
 	
 	// Update is called once per frame
@@ -22,8 +22,12 @@ public class Enemy : MonoBehaviour,IDropHandler,IHPBehaviour{
     {
         Attackable atk = eventData.pointerDrag?.GetComponent<Attackable>();
         if ( atk == null) return;
+        
+        //ダメージくらう
+        hp = Math.Max(0, hp - atk.Attack);
+        GameMainManager.I.DamageUpdate(atk.Attack);
+        if (hp == 0) GameMainManager.I.ChangeState(GameState.clear);
 
-        HP -= atk.Attack;
         if (eventData.pointerDrag != null)
         {
             Destroy(eventData.pointerDrag, 0.1f);
@@ -37,5 +41,10 @@ public class Enemy : MonoBehaviour,IDropHandler,IHPBehaviour{
     public float getMaxHp()
     {
         return maxHp;
+    }
+
+    public void DoReset()
+    {
+        hp = maxHp;
     }
 }

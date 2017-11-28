@@ -4,7 +4,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.EventSystems;
 
-public class DrillingController : MonoBehaviour,IDropHandler {
+public class DrillingController : MonoBehaviour,IDropHandler,IReset {
     private List<String> elementList;
 
     // Use this for initialization
@@ -31,5 +31,10 @@ public class DrillingController : MonoBehaviour,IDropHandler {
         var alchemyItems = AlchemyManager.I.Alchemy(elementList);
         elementList.Clear();
         Debug.Log(alchemyItems);
+    }
+
+    public void DoReset()
+    {
+        elementList.Clear();
     }
 }
