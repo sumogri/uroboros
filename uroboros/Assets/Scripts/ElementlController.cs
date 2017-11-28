@@ -10,9 +10,9 @@ using System;
 /// </summary>
 public class ElementlController : MonoBehaviour,IDragHandler,IEndDragHandler,IBeginDragHandler
 {
-    [SerializeField] private float attack = 1;
     private Vector3 mouseDiff;
     private CanvasGroup myGroup;
+    [SerializeField] private bool isRepop = false;
 
     // Use this for initialization
     void Start()
@@ -34,14 +34,15 @@ public class ElementlController : MonoBehaviour,IDragHandler,IEndDragHandler,IBe
     public void OnEndDrag(PointerEventData eventData)
     {
         myGroup.blocksRaycasts = true;
-        Debug.Log("hoge");
     }
 
     public void OnBeginDrag(PointerEventData eventData)
     {
         mouseDiff = transform.position - Input.mousePosition;
         transform.SetAsLastSibling();
-        Instantiate(gameObject, transform.parent);
+        if(isRepop)
+            Instantiate(gameObject, transform.parent);
         myGroup.blocksRaycasts = false;
+        isRepop = false;
     }
 }

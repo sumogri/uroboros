@@ -19,8 +19,6 @@ public class DrillingController : MonoBehaviour,IDropHandler {
 
     public void OnDrop(PointerEventData eventData)
     {
-        Debug.Log("Drop" + eventData.pointerDrag);
-
         if (eventData.pointerDrag != null)
         {
             elementList.Add(eventData.pointerDrag.name);

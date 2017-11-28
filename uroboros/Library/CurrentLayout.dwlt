@@ -97,7 +97,7 @@ MonoBehaviour:
   m_MinSize: {x: 208, y: 121}
   m_MaxSize: {x: 8008, y: 4021}
   vertical: 0
-  controlID: 79
+  controlID: 80
 --- !u!114 &5
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -120,7 +120,7 @@ MonoBehaviour:
   m_MinSize: {x: 713, y: 492}
   m_MaxSize: {x: 18008, y: 18042}
   vertical: 1
-  controlID: 76
+  controlID: 174
 --- !u!114 &6
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -199,7 +199,7 @@ MonoBehaviour:
   m_MinSize: {x: 713, y: 492}
   m_MaxSize: {x: 18008, y: 18042}
   vertical: 0
-  controlID: 77
+  controlID: 175
 --- !u!114 &9
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -249,7 +249,7 @@ MonoBehaviour:
   m_MinSize: {x: 234, y: 492}
   m_MaxSize: {x: 10004, y: 18042}
   vertical: 1
-  controlID: 78
+  controlID: 102
 --- !u!114 &11
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -625,9 +625,9 @@ MonoBehaviour:
     height: 966
   m_TreeViewState:
     scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: 
+    m_SelectedIDs: 4a010000
     m_LastClickedID: 0
-    m_ExpandedIDs: b6f3ffff92f4ffffc6f5ffffa6fbffff00000000
+    m_ExpandedIDs: 969affff3c9bffff649cffffa6fbffff00000000a8270000c0270000dc270000f0270000fa270000042800001628000036280000402800005c2b0000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -708,9 +708,9 @@ MonoBehaviour:
   m_isRotationLocked: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: 203.16283, y: 200.14978, z: 256.5786}
+    m_Target: {x: 290.7422, y: 195.03125, z: 34.5625}
     speed: 2
-    m_Value: {x: 203.16283, y: 200.14978, z: 256.5786}
+    m_Value: {x: 290.7422, y: 195.03125, z: 34.5625}
   m_RenderMode: 0
   m_ValidateTrueMetals: 0
   m_SceneViewState:
@@ -725,25 +725,25 @@ MonoBehaviour:
       speed: 2
       m_Value: 0
     yGrid:
-      m_Target: 1
+      m_Target: 0
       speed: 2
-      m_Value: 1
+      m_Value: 0
     zGrid:
       m_Target: 0
       speed: 2
       m_Value: 0
   m_Rotation:
-    m_Target: {x: 0, y: 0, z: 0, w: 1}
+    m_Target: {x: 0.055429325, y: 0.038930204, z: -0.0021628512, w: 0.99770147}
     speed: 2
-    m_Value: {x: -0, y: 0, z: -0, w: -1}
+    m_Value: {x: 0.055429306, y: 0.03893019, z: -0.0021628505, w: 0.9977011}
   m_Size:
-    m_Target: 585.52295
+    m_Target: 469.56467
     speed: 2
-    m_Value: 585.52295
+    m_Value: 469.56467
   m_Ortho:
-    m_Target: 0
+    m_Target: 1
     speed: 2
-    m_Value: 0
+    m_Value: 1
   m_ShowGlobalGrid: 1
   m_LastSceneViewRotation: {x: 0.2926058, y: 0.17797744, z: -0.055438656, w: 0.9378873}
   m_LastSceneViewOrtho: 1
@@ -815,18 +815,18 @@ MonoBehaviour:
     m_ShowAllHits: 0
     m_SearchArea: 0
     m_Folders:
-    - Assets
+    - Assets/Scripts
   m_ViewMode: 1
   m_StartGridSize: 68
   m_LastFolders:
-  - Assets
+  - Assets/Scripts
   m_LastFoldersGridSize: 68
   m_LastProjectPath: E:\data\kazusi\doc\UnityProjects\prototyping\uroboros
   m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: 2e270000
-    m_LastClickedID: 10030
+    m_SelectedIDs: 3a270000
+    m_LastClickedID: 10042
     m_ExpandedIDs: 000000002e27000000ca9a3bffffff7f
     m_RenameOverlay:
       m_UserAcceptedRename: 0
@@ -882,8 +882,8 @@ MonoBehaviour:
   m_ListAreaState:
     m_SelectedInstanceIDs: 
     m_LastClickedInstanceID: 0
-    m_HadKeyboardFocusLastEvent: 0
-    m_ExpandedInstanceIDs: 5e2c0000c00200004a390000e60a0000021d0000aa1f0000941e00009e23000052060000b2060000f0050000ae500000e84f0000042900001822000076330000ca230000de230000d0230000d82300002e240000d239ffff20290000fc2b00006e2800005838000000000000a0330000282f0000
+    m_HadKeyboardFocusLastEvent: 1
+    m_ExpandedInstanceIDs: 5e2c0000c00200004a390000e60a0000021d0000aa1f0000941e00009e23000052060000b2060000f0050000ae500000e84f0000042900001822000076330000ca230000de230000d0230000d82300002e240000d239ffff20290000fc2b00006e28000058380000a0330000282f000000000000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
