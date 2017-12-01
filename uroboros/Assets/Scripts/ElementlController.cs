@@ -40,8 +40,9 @@ public class ElementlController : MonoBehaviour,IDragHandler,IEndDragHandler,IBe
     {
         mouseDiff = transform.position - Input.mousePosition;
         transform.SetAsLastSibling();
-        if(isRepop)
-            Instantiate(gameObject, transform.parent);
+        if (isRepop)
+            Instantiate(gameObject, transform.parent).name = this.name;
+
         myGroup.blocksRaycasts = false;
         isRepop = false;
     }
